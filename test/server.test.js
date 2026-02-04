@@ -6,6 +6,10 @@ const { app } = require('../scripts/server');
 
 describe('GET /hex-to-rgb (Integration test)', function () {
 
+    after(function () {
+        console.log('Tests finished.');
+    })
+
     it('returns correct RGB for valid hex without #', async function () {
         const res = await request(app)
             .get('/hex-to-rgb')

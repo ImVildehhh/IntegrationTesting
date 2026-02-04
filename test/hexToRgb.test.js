@@ -3,13 +3,9 @@
 const { expect } = require('chai');
 const { hexToRgb } = require('../scripts/hexToRgb');
 
-describe('hexToRgb converting hex to rgb', function() {
+describe('hexToRgb converting hex to rgb (Unit tests)', function() {
     before(function () {
         console.log('Starting tests...');
-    })
-
-    after(function () {
-        console.log('Tests finished.');
     })
 
     // --Basic funtioning tests--
